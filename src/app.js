@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
 }); //fin de app.get /
 
 //healt check
-app.get('health', (req, res) => {
+app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
     message: 'ProductosApp API se esta ejecutando correctamente'
